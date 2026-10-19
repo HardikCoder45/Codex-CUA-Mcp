@@ -1,6 +1,6 @@
 {
-  "name": "codex-computer-use-mcp",
-  "version": "0.1.0",
+  "name": "codex-cua-mcp",
+  "version": "0.6.2",
   "description": "Thin stdio MCP proxy for the locally installed OpenAI Codex unified computer-use runtime.",
   "type": "module",
   "license": "MIT",
