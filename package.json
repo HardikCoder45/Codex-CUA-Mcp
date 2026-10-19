@@ -1,0 +1,30 @@
+{
+  "name": "codex-computer-use-mcp",
+  "version": "0.1.0",
+  "description": "Thin stdio MCP proxy for the locally installed OpenAI Codex unified computer-use runtime.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "codex-computer-use-mcp": "./bin/codex-computer-use-mcp.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "PROVENANCE.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "scripts": {
+    "build": "node --check bin/codex-computer-use-mcp.mjs && node --check src/runtime.mjs && node --check src/proxy.mjs && node --check src/provision.mjs",
+    "test": "node --test",
+    "check": "npm run build && npm test"
+  }
+}
